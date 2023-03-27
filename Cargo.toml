@@ -1,0 +1,2 @@
+[workspace]
+members = ["try_poem", "try_utoipa"]

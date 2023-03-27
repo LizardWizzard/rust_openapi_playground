@@ -1,0 +1,26 @@
+[package]
+name = "try_poem"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.69"
+bytes = { version = "1.4.0", features = ["serde"] }
+hex = { version = "0.4.3", features = ["serde"] }
+poem = "1"
+poem-openapi = { version = "2", features = ["swagger-ui"] }
+serde = { version = "1.0.152", features = ["derive"] }
+serde_json = "1.0.93"
+thiserror = "1.0.38"
+tokio = { version = "1.26.0", features = ["full"] }
+tokio-stream = { version = "0.1.12", features = [
+    "tokio-util",
+    "sync",
+    "io-util",
+] }
+tokio-util = { version = "0.7.7", features = ["codec", "full"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+rand = "*"
