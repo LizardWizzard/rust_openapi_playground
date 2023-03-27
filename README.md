@@ -5,6 +5,7 @@
 pros:
 - strictly typed, spec is inferred from handler parameter/return type, so they cannot diverge
 - no duplication of paths compared to utoipa
+
 cons:
 - harder to deal with common errors across handlers because each response type is unique. (So each time you get e g tenant missing from internal api you have to convert it to MyEndpointTenantIsMissing). This probably can be worked around with macro, but still.
 - poem is separate framework
